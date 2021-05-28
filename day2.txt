@@ -1,0 +1,217 @@
+{
+	int[,] arr = new int[2,2];
+		Console.Write("enter values");
+		for (int row = 0; row < 2; row++)
+		{
+			for (int col = 0; col < 2; col++)
+			{
+				arr[row,col]= Convert.ToInt32(Console.ReadLine());
+			}
+		}
+		for (int row = 0; row < 2; row++)
+		{
+		for (int col = 0; col < 2; col++)
+		{
+			Console.Write(arr[row,col]+"\t");
+	}
+			Console.WriteLine();
+		}	
+		Console.ReadLine();
+	}
+}
+2.  
+{
+	public static void Main(string[] args)
+	{
+	string[][] members = new string[2][]
+	{
+	new string[]{ "sar","al"},
+	 new string[]{ "sar","alex","rohan"},
+};
+ for (int i = 0; i< members.Length;i++)
+ {
+	for (int j = 0; j< members.Length;j++) 
+	{
+		Console.Write(members[i][j] + "\t");
+	}
+	 Console.WriteLine();
+ }
+					 Console.ReadLine();
+					}
+	}
+3.
+
+{
+ public static void Main(string[] args)
+	{
+	int a=1,b=5;
+	int c=sum(a,b);
+	 Console.WriteLine(c);
+		 Console.ReadLine();
+	}
+	public static int sum(int a,int b)
+				  {
+					  return (a+b);
+				  }
+}		
+4.
+{
+	int a=1,b=5;
+	int c=sub(a,b);
+	 Console.WriteLine(c);
+		 Console.ReadLine();
+	}
+	public static int sub(int a,int b)
+				  {
+					  return (a-b);
+				  }
+}
+5.
+{
+ public static void Main(string[] args)
+	{
+	int a=1,b=5;
+	int c=mul(a,b);
+	 Console.WriteLine(c);
+		 Console.ReadLine();
+	}
+	public static int mul(int a,int b)
+				  {
+					  return (a*b);
+				  }
+}
+6.
+{
+ public static void Main(string[] args)
+	{
+	int a=1,b=5;
+	int c=div(a,b);
+	 Console.WriteLine(c);
+		 Console.ReadLine();
+	}
+	public static int div(int a,int b)
+				  {
+					  return (a%b);
+				  }
+}
+7.
+{
+ public static void Main(string[] args)
+	{
+	int a=1,b=5;
+	int c=div(a,b);
+	 Console.WriteLine(c);
+		 Console.ReadLine();
+	}
+	public static int div(int a,int b)
+				  {
+					  return (a/b);
+				  }
+}
+8.
+{
+ public static void Main(string[] args)
+	{
+	int a=5, b=9;
+	 Sum(a,b);
+	  Console.ReadLine();
+ }
+	public static void Sum(int a, int b=9)
+	{
+		Console.WriteLine(a+b);
+	}
+}
+9.
+{
+ public static void Main(string[] args)
+	{
+	int a=5, b=9;
+	 Sum(a);
+	  Console.ReadLine();
+ }
+	public static void Sum(int a, int b=9)
+	{
+		Console.WriteLine(a+b);
+	}
+}
+10.
+using System;
+					
+public class Program
+{
+	public static void Main()
+    {
+  
+        string str1 = "I love my india";
+        string upperstr1 = str1.ToUpper();
+  
+        Console.WriteLine(upperstr1);
+    }
+}
+11.
+using System;
+public class program {
+  public static void Main()
+    {  string str1 = "I love my india";
+        string lowerstr1 = str1.ToLower();
+  
+        Console.WriteLine(lowerstr1);
+    }
+}
+11.
+//jagged array
+using System;
+public class Program 
+  {
+  public  static void Main(string[] args)
+   {
+
+            string[][] Members = new string[2][]
+			{
+
+				new string[]{"Sam", "Alex"}, 
+				new string[]{ "Peter", "Sonia", "Ronnie"}
+			};
+
+				for (int i = 0; i < Members. Length; i++)
+				{
+
+				  for (int j = 0; j < Members[i]. Length; j++)
+				  {
+
+                        Console.Write(Members [i][j] + "\t");
+
+                  }
+					Console.WriteLine();
+				}
+   }
+}
+12.
+using System;
+public class Program  
+    {  
+       public  static void Main(string[] args)  
+        {
+		   string str="i love my country";
+		   char[] arr=str.ToCharArray();
+		   for(int i=0;i<str.Length;i++)
+		   {
+			   if(i==0)
+			   {
+				   arr[i]=Convert.ToChar(str[i].ToString().ToUpper());
+			   }
+			   else
+				   
+			   {
+				   if(str[i]==' ')
+				   {
+					 
+					   arr[i+1]=Convert.ToChar(str[i+1].ToString().ToUpper());
+				   }			  
+			   }		   
+	   }
+	string output=new string (arr);
+		   Console.WriteLine(output);
+		   
+}
+}
